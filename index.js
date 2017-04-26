@@ -1,1 +1,1 @@
-require('babel-polyfill');
+// NOTE: export package classes/objects here
