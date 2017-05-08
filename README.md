@@ -15,7 +15,8 @@ Also, it provides an extensible build process integrated with npm scripts and Gu
 - `npm test` A basic wrapper to run the only linting and tests and nothing else.
 - `npm version <version_bump>` This invokes a multi-step process to run a production build, commit, and publish the [version](https://docs.npmjs.com/cli/version) of your npm package.
 - `npm run version:pre --increment=<version_bump> [--preid=<prerelease_tag>]` A wrapper around `npm version ...`, this allows the injection of [prerelease tags](https://www.npmjs.com/package/semver#prerelease-tags) to your npm package. This provides an even greater degree on semantic versions beyond the default provided by `npm version ...` above.
-  - **NOTE:** This requires the `semver` package to be installed globally in order to work.
+
+- **NOTE:** This requires the `gulp-cli` and `semver` packages to be installed globally in order to work.
 
 ## Guarantees
 [There are none](./LICENSE).
