@@ -1,6 +1,6 @@
 {
-  "name": "js-npm-starter",
-  "version": "1.0.0",
+  "name": "starter-npm-js",
+  "version": "0.0.0",
   "description": "Starter kit for NPM packages.",
   "main": "index.js",
   "scripts": {
@@ -13,19 +13,19 @@
     "release": "NODE_ENV=production npm test && npm run build && node ./bin/compress",
     "pretest": "del coverage coverage.lcov .nyc_output",
     "test": "standard",
-    "posttest": "NODE_ENV=test nyc --reporter=html --reporter=text mocha tst --recursive --exit",
+    "posttest": "NODE_ENV=test nyc --reporter=html --reporter=text mocha --recursive --exit 'tst/**/*.spec.js'",
     "version": "npm run release && git add --all",
     "postversion": "git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aeilers/js-npm-starter.git"
+    "url": "git+https://github.com/fnalabs/starter-npm-js.git"
   },
   "bugs": {
-    "url": "https://github.com/aeilers/js-npm-starter/issues"
+    "url": "https://github.com/fnalabs/starter-npm-js/issues"
   },
-  "homepage": "https://github.com/aeilers/js-npm-starter#readme",
-  "author": "Adam Eilers <adam.eilers@gmail.com>",
+  "homepage": "https://github.com/fnalabs/starter-npm-js#readme",
+  "author": "Adam Eilers",
   "license": "MIT",
   "engines": {
     "node": ">=8",
@@ -36,23 +36,23 @@
     "archiver": "~2.1.0",
     "babel-cli": "~6.26.0",
     "babel-core": "~6.26.0",
-    "babel-eslint": "~8.0.1",
+    "babel-eslint": "~8.1.2",
     "babel-plugin-add-module-exports": "~0.2.1",
     "babel-plugin-istanbul": "~4.1.5",
     "babel-plugin-transform-es2015-modules-commonjs": "~6.26.0",
     "babel-register": "~6.26.0",
     "chai": "~4.1.2",
     "chai-as-promised": "~7.1.1",
-    "codecov": "~2.3.1",
+    "codecov": "~3.0.0",
     "del-cli": "~1.1.0",
     "dirty-chai": "~2.0.1",
-    "mocha": "~4.0.1",
-    "nodemon": "~1.12.1",
-    "nyc": "~11.2.1",
+    "mocha": "~4.1.0",
+    "nodemon": "~1.14.7",
+    "nyc": "~11.4.1",
     "proxyquire": "~1.8.0",
-    "sinon": "~4.0.1",
+    "sinon": "~4.1.3",
     "standard": "~10.0.3",
-    "uglify-es": "~3.1.3"
+    "uglify-es": "~3.3.4"
   },
   "nyc": {
     "check-coverage": true,
