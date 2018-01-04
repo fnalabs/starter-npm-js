@@ -1,4 +1,4 @@
-# starter-npm-js
+# starter(npm)<sup>js</sup>
 
 [![Dependency Status][depstat-image]][depstat-url]
 [![Dev Dependency Status][devdepstat-image]][devdepstat-url]
