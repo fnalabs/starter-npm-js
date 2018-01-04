@@ -32,6 +32,8 @@ archive.directory('conf')
 archive.directory('dist')
 
 // append files
+archive.file('LICENSE')
+archive.file('README.md')
 archive.file('package-lock.json')
 archive.file('package.json')
 
