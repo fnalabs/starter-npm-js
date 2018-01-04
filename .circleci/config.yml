@@ -3,19 +3,19 @@ version: 2.0
 jobs:
   checkout_code:
     docker:
-      - image: circleci/node:8.7.0
-    working_directory: ~/js-npm-starter
+      - image: circleci/node:8.9.4
+    working_directory: ~/starter-npm-js
     steps:
       - checkout
       - save_cache:
           key: repo-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - ~/js-npm-starter
+            - ~/starter-npm-js
 
   install_dependencies:
     docker:
-      - image: circleci/node:8.7.0
-    working_directory: ~/js-npm-starter
+      - image: circleci/node:8.9.4
+    working_directory: ~/starter-npm-js
     steps:
       - restore_cache:
           keys:
@@ -27,12 +27,12 @@ jobs:
       - save_cache:
           key: dependencies-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
-            - ~/js-npm-starter/node_modules
+            - ~/starter-npm-js/node_modules
 
   test:
     docker:
-      - image: circleci/node:8.7.0
-    working_directory: ~/js-npm-starter
+      - image: circleci/node:8.9.4
+    working_directory: ~/starter-npm-js
     steps:
       - restore_cache:
           keys:
@@ -47,14 +47,14 @@ jobs:
           name: Run coverage report
           command: npm run coverage
       - store_test_results:
-          path: ~/js-npm-starter/coverage.lcov
+          path: ~/starter-npm-js/coverage.lcov
       - store_artifacts:
-          path: ~/js-npm-starter/coverage.lcov
+          path: ~/starter-npm-js/coverage.lcov
 
   build:
     docker:
-      - image: circleci/node:8.7.0
-    working_directory: ~/js-npm-starter
+      - image: circleci/node:8.9.4
+    working_directory: ~/starter-npm-js
     steps:
       - restore_cache:
           keys:
@@ -68,9 +68,9 @@ jobs:
       - save_cache:
           key: assets-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
-            - ~/js-npm-starter/package.tar.gz
+            - ~/starter-npm-js/package.tar.gz
       - store_artifacts:
-          path: ~/js-npm-starter/package.tar.gz
+          path: ~/starter-npm-js/package.tar.gz
 
 workflows:
   version: 2
