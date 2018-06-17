@@ -3,7 +3,7 @@
 runBuild () {
     local DIVIDER="===================="
     local TEMPLATE="\n${DIVIDER}${DIVIDER}${DIVIDER}\n%s\n\n"
-    local TEMP_DIR=$(mktemp -d -p .)
+    local TEMP_DIR=$(mktemp -d -t .)
 
     printf "${TEMPLATE}" "Running Babel transpile to temp directory"
     babel src --out-dir ${TEMP_DIR}
