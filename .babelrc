@@ -3,13 +3,14 @@
     "add-module-exports",
     "@babel/plugin-transform-modules-commonjs"
   ],
-  "presets": [
-    "@babel/preset-env"
-  ],
   "env": {
     "test": {
       "plugins": [
-        "istanbul"
+        [ "istanbul", {
+          "exclude": [
+            "**/*.spec.js"
+          ]
+        }]
       ]
     }
   }
