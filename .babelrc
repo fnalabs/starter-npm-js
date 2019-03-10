@@ -1,16 +1,15 @@
 {
   "plugins": [
     "add-module-exports",
-    "transform-es2015-modules-commonjs"
+    "@babel/plugin-transform-modules-commonjs"
+  ],
+  "presets": [
+    "@babel/preset-env"
   ],
   "env": {
     "test": {
       "plugins": [
-        [ "istanbul", {
-          "exclude": [
-            "**/*.spec.js"
-          ]
-        }]
+        "istanbul"
       ]
     }
   }
