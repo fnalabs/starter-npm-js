@@ -18,7 +18,7 @@ Also, it provides an extensible build process integrated with npm scripts. The f
 - `npm run coverage` - to report test coverage to Codecov.
 - `npm run dev` - to run two nodemon processes automatically based on watched files, one to rebuild application code and the other to run tests.
 - `npm run fix` - to automatically apply JS Standard Style to all JS code.
-- `npm run release` - to test, build, and compress production code.
+- `npm run release` - to test and build production code.
 - `npm test` - to run JS Standard Style checks and unit tests.
 - `npm version` - to run production test and build, git commit version update, and publish.
 
