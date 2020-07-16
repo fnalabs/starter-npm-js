@@ -32,10 +32,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "~7.10.4",
-    "@babel/core": "~7.10.4",
+    "@babel/cli": "~7.10.5",
+    "@babel/core": "~7.10.5",
     "@babel/plugin-transform-modules-commonjs": "~7.10.4",
-    "@babel/register": "~7.10.4",
+    "@babel/register": "~7.10.5",
     "babel-eslint": "~10.1.0",
     "babel-plugin-add-module-exports": "~1.0.2",
     "babel-plugin-istanbul": "~6.0.0",
