@@ -7,13 +7,17 @@
 Starter kit for NPM packages.
 
 ## Overview
+
 Overall, this starter kit provides the standard boilerplate constructs to develop and build a NPM package. It has some configurable project settings with included \*rc/\*ignore files for:
+
 - [Babel](https://babeljs.io/) ([.babelrc](./.babelrc) for import/export syntactic sugar)
 - [Git](https://git-scm.com/) ([.gitignore](./.gitignore), pretty much the standard Node.js one provided by Github)
 - [NPM](https://www.npmjs.com/) ([.npmignore](./.npmignore), pretty much the .gitignore above with a few small changes)
 
 ## NPM
+
 Also, it provides an extensible build process integrated with npm scripts. The following is a breakdown of npm scripts provided and how to use them:
+
 - `npm run build` - to build production output.
 - `npm run coverage` - to report test coverage to Codecov.
 - `npm run dev` - to run two nodemon processes automatically based on watched files, one to rebuild application code and the other to run tests.
