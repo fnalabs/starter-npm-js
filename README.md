@@ -10,7 +10,7 @@ Starter kit for NPM packages.
 
 Overall, this starter kit provides the standard boilerplate constructs to develop and build a NPM package. It has some configurable project settings with included \*rc/\*ignore files for:
 
-- [Babel](https://babeljs.io/) ([.babelrc](./.babelrc) for import/export syntactic sugar)
+- [Babel](https://babeljs.io/) ([babel.config.json](./babel.config.json) for import/export syntactic sugar)
 - [Git](https://git-scm.com/) ([.gitignore](./.gitignore), pretty much the standard Node.js one provided by Github)
 - [NPM](https://www.npmjs.com/) ([.npmignore](./.npmignore), pretty much the .gitignore above with a few small changes)
 
