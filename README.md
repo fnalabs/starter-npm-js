@@ -8,7 +8,7 @@ Starter kit for NPM packages.
 
 Overall, this starter kit provides the standard boilerplate constructs to develop and build a NPM package. It has some configurable project settings with included \*rc/\*ignore files for:
 
-- [TypeScript](https://www.typescriptlang.org/) ([tsconfig.base.json](./tsconfig.base.json) for the latest JS features)
+- [TypeScript](https://www.typescriptlang.org/) ([tsconfig.base.json](./tsconfig.base.json) for the latest TypeScript features)
 - [Git](https://git-scm.com/) ([.gitignore](./.gitignore), pretty much the standard Node.js one provided by Github)
 - [NPM](https://www.npmjs.com/) ([.npmignore](./.npmignore), pretty much the .gitignore above with a few small changes)
 
